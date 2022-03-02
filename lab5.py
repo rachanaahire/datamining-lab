@@ -66,38 +66,13 @@ sal = dict_data["salary"]
 
 # Noramlise logic
 if choice == 1:
-    zscores_age = calc_zscores(age)
-    zscores_exp = calc_zscores(exp)
-    zscores_sal = calc_zscores(sal)
-    print("Age : ", zscores_age)
-    print("Experience : ", zscores_exp)
-    print("Salary : ", zscores_sal)
+    print("Age : ", calc_zscores(age))
+    print("Experience : ", calc_zscores(exp))
+    print("Salary : ", calc_zscores(sal))
 elif choice == 2:
-    norm_age = calc_minmax(age)
-    norm_exp = calc_minmax(exp)
-    norm_sal = calc_minmax(sal)
-    print("Age : ", norm_age)
-    print("Experience : ", norm_exp)
-    print("Salary : ", norm_sal)
+    print("Age : ", calc_minmax(age))
+    print("Experience : ", calc_minmax(exp))
+    print("Salary : ", calc_minmax(sal))
 
 
-
-
-
-""" def calc_mean(list):
-    sum = 0
-    for val in list:
-        sum += val
-    return sum/len(list)
-
-print("Replace it with numerical value (Male=0, Female=1)")
-print("Before =====> \n",dict_data["Gender"])
-
-for key in dict_data.keys():
-    for index in range(len(dict_data[key])):
-        value = dict_data[key][index]
-        if value == "F" or value == "M":
-            dict_data[key][index] = 1 if value == "F" else 0
-
-print("After =====> \n",dict_data["Gender"]) """
 
