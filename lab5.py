@@ -1,8 +1,10 @@
+### DATA Normalization with Z score and Min Max Normalization
+
 #Created Dictionary with 11 entries
 dict_data = {
     "Name" : ["Anvi Shah", "Aman Gupta", "Debina Bose", "Akshay Kamble", "Anita Singh", "Manish Patil","Sushmita Pal", "Raj Bhosale", "Priti Pole", "Sheela Ram", "Nimmi Sen"],
     "Age": [42, 34, 26, 26, 0, 31, 0, 36, 32, 22, 37],
-    "Gender": ["F", "M", "F", "M", "F", "M", "F", "M", "F", "F", "F"],
+    "Gender": ["F", "M", "F", "M", "F", "M", "F", "M", "F", "NA", "NA"],
     "experience": [20, 10, 3, 5, 2, 8, 12, 9, 0, 14],
     "salary": [65000, 40000, 28000, 0, 25000, 35000, 59000, 38000, 0, 61000]
 }
@@ -75,4 +77,23 @@ elif choice == 2:
     print("Salary : ", calc_minmax(sal))
 
 
+
+
+
+""" def calc_mean(list):
+    sum = 0
+    for val in list:
+        sum += val
+    return sum/len(list)
+
+print("Replace it with numerical value (Male=0, Female=1)")
+print("Before =====> \n",dict_data["Gender"])
+
+for key in dict_data.keys():
+    for index in range(len(dict_data[key])):
+        value = dict_data[key][index]
+        if value == "F" or value == "M":
+            dict_data[key][index] = 1 if value == "F" else 0
+
+print("After =====> \n",dict_data["Gender"]) """
 
